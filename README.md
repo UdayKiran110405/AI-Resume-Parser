@@ -1,108 +1,138 @@
 # AI Resume Parser
 
-An AI-powered resume parser that extracts information from PDF resumes and provides intelligent analysis and upskilling suggestions using Google's Gemini API.
+The AI Resume Parser is a powerful web application that leverages artificial intelligence to analyze and extract key information from resumes. This tool helps recruiters, HR professionals, and job seekers quickly understand resume content, identify strengths, and receive improvement suggestions.
 
-## Features
+## Key Features
 
-- **Upload & Analyze**: Upload PDF resumes and get AI-powered analysis
-- **Information Extraction**: Extracts personal info, skills, experience, education
-- **Resume Rating**: Get a rating out of 10 for your resume
-- **Improvement Suggestions**: AI-generated suggestions for resume improvement
-- **Upskilling Recommendations**: Personalized skill development suggestions
-- **History Tracking**: View all previously uploaded resumes in a table
-- **Detailed View**: Click to see full analysis of any past resume
+1. **Resume Upload & Analysis**
+   - Upload PDF resumes for AI-powered analysis
+   - View detailed parsing results (personal info, skills, work experience, education)
 
-## Tech Stack
+2. **Resume History**
+   - Track all uploaded resumes with metadata
+   - View historical analysis results and ratings
 
-- **Backend**: FastAPI (Python)
-- **Frontend**: React.js
-- **Database**: SQLite (easily replaceable with PostgreSQL)
-- **AI**: Google Gemini API
-- **PDF Processing**: PyPDF2
+3. **Extracted Text View**
+   - Access raw extracted text from any uploaded resume
+   - Manage your resume library with delete functionality
 
-## Setup Instructions
+4. **AI-Powered Insights**
+   - Automatic resume rating (0-10 scale)
+   - Personalized improvement suggestions
+   - Upskilling recommendations
 
-### Backend Setup
-
-1. Navigate to the backend directory:
-
-```bash
-cd backend
-```
-
-2. Install dependencies:
-
-```bash
-pip install -r ../requirements.txt
-```
-
-3. Set up your Gemini API key:
-
-   - Get a free API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Set environment variable: `export GEMINI_API_KEY=your_api_key_here`
-   - Or edit the API key directly in `main.py`
-
-4. Run the backend server:
-
-```bash
-python main.py
-```
-
-The API will be available at `http://localhost:8000`
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-
-```bash
-cd frontend
-```
-
-2. Install dependencies:
-
-```bash
-npm install react react-dom react-scripts
-```
-
-3. Start the development server:
-
-```bash
-npm start
-```
-
-The frontend will be available at `http://localhost:3000`
-
-## Usage
-
-1. **Upload Resume**: Go to the "Upload Resume" tab, select a PDF file, and click "Upload & Analyze"
-2. **View Analysis**: See extracted information, skills, rating, and AI suggestions
-3. **Check History**: Go to "Resume History" tab to see all uploaded resumes
-4. **View Details**: Click "Details" button on any resume to see full analysis
-
-## API Endpoints
-
-- `POST /upload-resume` - Upload and analyze a resume
-- `GET /resumes` - Get all uploaded resumes
-- `GET /resume/{id}` - Get specific resume details
-- `GET /health` - Health check
-
-## Sample Data
-
-Place sample PDF resumes in the `sample_data/` folder for testing.
 
 ## Screenshots
 
-Add screenshots of your application in the `screenshots/` folder:
+1. **Main Interface**
+   
+   ![Upload Interface](/Screenshot%202025-06-08%20210821.png)
 
-- Upload page
-- Analysis results
-- History table
-- Details modal
+2. **File Selection**
+   
+   ![File Selection](/Screenshot%202025-06-08%20211315.png)
 
-## Future Enhancements
+3. **Analysis Results**
+    
+   <img src="localhost_3000_%20(5).png" alt="Analysis Results" width="600">
 
-- PostgreSQL integration
-- User authentication
-- Resume comparison
-- Export functionality
-- Advanced analytics dashboard
+4. **Resume History**
+   
+   <img src="localhost_3000_%20(4).png" alt="Resume History" width="600">
+
+5. **Extracted Text**
+    
+   <img src="localhost_3000_%20(6).png" alt="Extracted Text" width="600">
+
+
+## Installation
+
+```bash
+# Clone repository
+git clone https://github.com/UdayKiran110405/AI-Resume-Parser.git
+
+# Install dependencies
+pip install -r requirements.txt
+cd frontend
+npm install
+
+# Run application
+python backend/main.py  # Backend
+npm start               # Frontend (from frontend directory)
+```
+## Usage Guide
+
+### Step 1: Upload Your Resume
+- Click the "Choose File" button
+- Select a PDF resume from your device
+- Supported formats: PDF only (max size: 5MB)
+
+### Step 2: Analyze Your Resume
+- Click the "Upload & Analyze" button
+- Wait for processing (typically takes 10-30 seconds)
+- View real-time progress indicator during analysis
+
+### Step 3: Review Analysis Results
+The system will display comprehensive insights including:
+
+#### Personal Information
+- Name
+- Contact details (email, phone)
+- LinkedIn/GitHub profiles (if available)
+
+#### Professional Summary
+- Core competencies
+- Career objectives
+
+#### Skills Analysis
+- Technical skills categorized by proficiency
+- Programming languages
+- Frameworks and tools
+
+#### Work Experience
+- Chronological work history
+- Role descriptions
+- Key achievements and responsibilities
+
+#### Education Background
+- Degrees and certifications
+- Institutions and graduation dates
+- Academic achievements
+
+#### Resume Rating (0-10 scale)
+- Overall quality assessment
+- Breakdown by section scores
+
+#### Improvement Suggestions
+- Content recommendations
+- Formatting tips
+- Skill enhancement opportunities
+
+### Additional Features
+- **History View**: Access all previously analyzed resumes
+- **Compare Resumes**: Side-by-side comparison of multiple resumes
+- **Export Options**: Download analysis reports in PDF/JSON format
+
+## Project Structure
+```bash
+AI-RESUME-PARSER/
+├── backend/
+│   ├── uploads/
+│   ├── database.py
+│   ├── main.py
+│   └── resumes.db
+├── frontend/
+├── sample_data/
+│   └── screenshots/  # Contains all demo images
+├── README.md
+└── requirements.txt
+```
+## 🎥 Video Demo
+
+<video controls width="100%" height="auto">
+  <source src="https://github.com/UdayKiran110405/AI-Resume-Parser/raw/main/ResumeParser.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+[Direct video link](https://github.com/UdayKiran110405/AI-Resume-Parser/raw/main/ResumeParser.mp4)
+
