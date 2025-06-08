@@ -129,10 +129,7 @@ AI-RESUME-PARSER/
 ```
 ## 🎥 Video Demo
 
-<video controls width="100%" height="auto">
-  <source src="https://github.com/UdayKiran110405/AI-Resume-Parser/raw/main/ResumeParser.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch Demo](https://img.icons8.com/color/480/youtube-play.png)](https://drive.google.com/file/d/1L6iYAdUyGEcu_jMRpVc90QE8yCbic409/view?usp=sharing)
 
-[Direct video link](https://github.com/UdayKiran110405/AI-Resume-Parser/raw/main/ResumeParser.mp4)
+📁 [Click here to watch the video on Google Drive](https://drive.google.com/file/d/1L6iYAdUyGEcu_jMRpVc90QE8yCbic409/view?usp=sharing)
 
