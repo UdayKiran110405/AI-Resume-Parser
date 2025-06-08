@@ -130,5 +130,6 @@ AI-RESUME-PARSER/
 ## 🎥 Video Demo
 
 [![Watch Demo](https://img.icons8.com/color/480/youtube-play.png)](https://drive.google.com/file/d/1whd1rt7j2PSJzpxoYk_XjjEsTM8co2IQ/view?usp=sharing)
+
 📁 [Click here to watch the video on Google Drive](https://drive.google.com/file/d/1whd1rt7j2PSJzpxoYk_XjjEsTM8co2IQ/view?usp=sharing)
 
